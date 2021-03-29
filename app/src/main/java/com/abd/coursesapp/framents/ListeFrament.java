@@ -84,7 +84,7 @@ public class ListeFrament extends Fragment {
         btnajouter.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (!libelle.getText().toString().equals("") && prix.getText().toString().equals("")){
+                if (!libelle.getText().toString().equals("") && !prix.getText().toString().equals("")){
                     String lb = libelle.getText().toString();
                     double prx = Double.parseDouble(prix.getText().toString());
                     Dao dao = new Dao(getContext());
